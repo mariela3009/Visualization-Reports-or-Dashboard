@@ -24,10 +24,10 @@ python -m unittest discover -s tests -v
 
 1. Crea un repositorio público en GitHub y sube este proyecto a la rama `main` (incluye `.github/workflows/deploy.yml`). No subas tokens.
 2. Crea una cuenta de Hugging Face y un token con permiso de escritura para el Space objetivo.
-3. En GitHub abre Settings → Secrets and variables → Actions. Crea el **secret** `HF_TOKEN` con ese token y la **variable** `HF_SPACE_ID` con `TU_USUARIO/ventas-360`.
+3. En GitHub abre Settings → Secrets and variables → Actions. Crea el **secret** `HF_TOKEN` con ese token. El workflow ya utiliza `marany/ventas-360`; solo necesitas la **variable** `HF_SPACE_ID` si deseas publicar en otro Space.
 4. Ejecuta el workflow desde Actions → Verificar y publicar dashboard → Run workflow, o realiza un push a `main`.
 5. El flujo prueba el dashboard y, si pasa, crea o actualiza un Space público Docker. El proveedor construye la imagen; espera a que el Space figure como Running.
-6. Comprueba el dashboard en `https://huggingface.co/spaces/TU_USUARIO/ventas-360` desde una ventana privada.
+6. Comprueba el dashboard en `https://huggingface.co/spaces/marany/ventas-360` desde una ventana privada, después de que el despliegue termine. Esta dirección es el destino configurado; no indica que el Space ya esté publicado.
 7. Haz un cambio pequeño en el título y súbelo a `main`. Guarda evidencia del workflow exitoso y del cambio visible: demuestra la automatización.
 
 Los pull requests ejecutan pruebas; la publicación se realiza desde `main`. El token permanece en GitHub Secrets. El script envía solo los archivos de la aplicación. Una subida exitosa no prueba que la construcción remota haya terminado: revisa su estado y funcionamiento.

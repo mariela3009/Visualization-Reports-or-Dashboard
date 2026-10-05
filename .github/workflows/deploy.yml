@@ -33,5 +33,5 @@ jobs:
       - name: Publicar Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_SPACE_ID: ${{ vars.HF_SPACE_ID }}
+          HF_SPACE_ID: ${{ vars.HF_SPACE_ID || 'marany/ventas-360' }}
         run: python scripts/deploy.py

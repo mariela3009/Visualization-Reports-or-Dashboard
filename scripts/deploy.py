@@ -6,7 +6,9 @@ import shutil
 from huggingface_hub import HfApi
 
 def main():
-    token = os.environ["HF_TOKEN"]
+    token = os.environ.get("HF_TOKEN", "")
+    if not token:
+        raise RuntimeError("Falta HF_TOKEN: guárdalo como secreto de Actions en GitHub para autorizar el despliegue.")
     repo_id = os.environ["HF_SPACE_ID"]
     if len(repo_id.split("/")) != 2:
         raise ValueError("HF_SPACE_ID debe tener el formato usuario/nombre-space")

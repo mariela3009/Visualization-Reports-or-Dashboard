@@ -1,11 +1,7 @@
 # De los datos a la nube: un dashboard de ventas con Streamlit y despliegue automático
 
-**Autor:** [nombre del integrante]  
 **Repositorio público:** https://github.com/mariela3009/Visualization-Reports-or-Dashboard  
 **Dashboard público:** https://ventas360-mariela3009.streamlit.app/  
-**Video:** [pegar URL real]
-
-> Borrador listo para editar. Publicar después de ejecutar el despliegue, verificar el dashboard y reemplazar los campos pendientes. Cada integrante debe identificar su contribución real y publicar su artículo si así lo exige la asignatura.
 
 ## El problema
 
@@ -69,15 +65,11 @@ Sin aplicar filtros, los datos generados contienen 1.200 pedidos, 3.656 unidades
 ## Publicación y resultado
 
 **Aplicación:** https://ventas360-mariela3009.streamlit.app/  
-**Video del proceso:** [pegar URL pública real].
+El video del proceso se añadirá a este artículo cuando esté publicado.
 
 El 4 de octubre de 2026 se verificó la aplicación remota: mostró 1.200 pedidos, 3.656 unidades y $1.980.275.000 COP de ventas. Para comprobar las actualizaciones automáticas se agregó una leyenda sobre el proveedor y se envió el cambio a main.
 
 El proyecto ofrece una ruta reproducible desde una tabla hasta una aplicación de visualización. Como mejoras futuras se pueden incorporar archivos propios, comparaciones entre periodos y validaciones de calidad de datos. Cualquier uso con datos reales exigiría adaptar el modelo y revisar quién puede acceder a la información.
-
-## Mi contribución
-
-**[Cada integrante: explicar su trabajo real en datos, visualización, pruebas, despliegue o documentación; añadir un ejemplo o una decisión propia.]**
 
 ## Documentación consultada
 

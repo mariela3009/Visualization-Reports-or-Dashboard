@@ -1,9 +1,9 @@
 # Comprobación antes de entregar
 
 - [ ] Repositorio creado con visibilidad pública y código accesible.
-- [ ] Token configurado como secret, sin incluirlo en archivos.
+- [ ] Conexión de GitHub autorizada para Streamlit Community Cloud.
 - [ ] Workflow remoto exitoso y URL de ejecución guardada.
-- [ ] Space en Running y dashboard probado en ventana privada.
+- [ ] Aplicación activa en Community Cloud y dashboard probado en ventana privada.
 - [ ] Cambio en main visible después del despliegue automático.
 - [ ] Artículo publicado por cada integrante según la consigna, con contribuciones reales, capturas y enlaces.
 - [ ] Video grabado y publicado como Público; duración máxima 5 minutos.

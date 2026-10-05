@@ -15,7 +15,7 @@ La aplicación se llama **Ventas 360**. Incluye filtros de periodo, ciudad y cat
 
 ## Herramientas y datos
 
-Streamlit construye la interfaz en Python. Pandas transforma y agrupa los registros, mientras Plotly genera gráficos interactivos. Docker describe el entorno de ejecución y GitHub Actions conecta las verificaciones con la publicación en Hugging Face Spaces.
+Streamlit construye la interfaz en Python. Pandas transforma y agrupa los registros, mientras Plotly genera gráficos interactivos. GitHub Actions ejecuta las pruebas y Streamlit Community Cloud publica la aplicación desde el repositorio y actualiza el despliegue al cambiar la rama configurada.
 
 Para que el ejemplo sea reproducible y no dependa de información privada, `data.py` genera 1.200 pedidos ficticios de 2025. Cada registro tiene fecha, producto, categoría, ciudad, unidades e importe en pesos colombianos. La semilla 42 mantiene constantes los datos entre ejecuciones. Las conclusiones del dashboard describen esta simulación, no un negocio real.
 
@@ -46,7 +46,7 @@ El gráfico de líneas agrupa las ventas por mes para mostrar la evolución. Las
 
 ## Repositorio público
 
-El repositorio incluye `app.py`, `data.py`, `requirements.txt`, `Dockerfile`, las pruebas y el workflow. El README explica cómo instalar, ejecutar y desplegar. Las credenciales no forman parte del código: el token del proveedor se configura como un secreto de GitHub.
+El repositorio incluye `app.py`, `data.py`, `requirements.txt`, las pruebas y el workflow. El README explica cómo instalar, ejecutar y desplegar. También conserva un Dockerfile para otros proveedores. Streamlit Community Cloud se conecta a GitHub mediante la autorización de la cuenta; no se incluyen credenciales en el código.
 
 **Repositorio:** https://github.com/mariela3009/Visualization-Reports-or-Dashboard.
 
@@ -54,11 +54,11 @@ El repositorio incluye `app.py`, `data.py`, `requirements.txt`, `Dockerfile`, la
 
 El workflow se activa al actualizar `main`, al abrir un pull request o mediante ejecución manual. Primero instala las dependencias y ejecuta pruebas de reproducibilidad de los datos, arranque de la aplicación, selección de categoría y filtros sin resultados.
 
-Si las pruebas pasan y el evento corresponde a la rama principal, el script de despliegue publica los archivos del dashboard en un Space Docker. Se configuran dos valores en GitHub: el secreto `HF_TOKEN`, con permiso de escritura, y la variable `HF_SPACE_ID`, con el formato `usuario/ventas-360`.
+La publicación se configura en Streamlit Community Cloud con el repositorio `mariela3009/Visualization-Reports-or-Dashboard`, la rama `main` y el archivo `app.py`. El proveedor instala las dependencias de `requirements.txt` y ejecuta el dashboard.
 
-Hugging Face construye la imagen a partir del Dockerfile y ejecuta Streamlit en el puerto 7860, configurado también en los metadatos del Space. Para validar el proceso hay que comprobar tanto el workflow como el estado Running y el funcionamiento de la aplicación remota.
+GitHub Actions y el despliegue del proveedor son procesos independientes: Community Cloud observa los cambios de la rama y actualiza la aplicación automáticamente; no espera a que Actions termine. Para exigir pruebas antes de integrar cambios, el equipo puede configurar protección de rama y trabajar mediante pull requests. La validación de esta entrega requiere comprobar las pruebas y el funcionamiento de la URL pública.
 
-**[Insertar captura del workflow exitoso y del Space ejecutándose.]**
+**[Insertar captura de las pruebas exitosas y de la aplicación ejecutándose en Streamlit Community Cloud.]**
 
 Una demostración de la automatización consiste en modificar el título, subir el cambio a `main` y observar su aparición en la aplicación pública después del despliegue. Esa evidencia permite comprobar que las actualizaciones no requieren copiar archivos manualmente al proveedor.
 
@@ -82,6 +82,6 @@ El proyecto ofrece una ruta reproducible desde una tabla hasta una aplicación d
 ## Documentación consultada
 
 - [Streamlit](https://docs.streamlit.io/)
-- [Docker Spaces](https://huggingface.co/docs/hub/spaces-sdks-docker)
-- [Publicación de archivos con huggingface_hub](https://huggingface.co/docs/huggingface_hub/guides/upload)
+- [Despliegue en Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
+- [Actualizaciones desde GitHub](https://docs.streamlit.io/deploy/streamlit-community-cloud/manage-your-app)
 - [GitHub Actions](https://docs.github.com/en/actions)

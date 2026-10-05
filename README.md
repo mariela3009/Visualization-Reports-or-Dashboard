@@ -22,15 +22,14 @@ python -m unittest discover -s tests -v
 
 ## Repositorio público y automatización
 
-1. Crea un repositorio público en GitHub y sube este proyecto a la rama `main` (incluye `.github/workflows/deploy.yml`). No subas tokens.
-2. Crea una cuenta de Hugging Face y un token con permiso de escritura para el Space objetivo.
-3. En GitHub abre Settings → Secrets and variables → Actions. Crea el **secret** `HF_TOKEN` con ese token. El workflow ya utiliza `marany/ventas-360`; solo necesitas la **variable** `HF_SPACE_ID` si deseas publicar en otro Space.
-4. Ejecuta el workflow desde Actions → Verificar y publicar dashboard → Run workflow, o realiza un push a `main`.
-5. El flujo prueba el dashboard y, si pasa, crea o actualiza un Space público Docker. El proveedor construye la imagen; espera a que el Space figure como Running.
-6. Comprueba el dashboard en `https://huggingface.co/spaces/marany/ventas-360` desde una ventana privada, después de que el despliegue termine. Esta dirección es el destino configurado; no indica que el Space ya esté publicado.
-7. Haz un cambio pequeño en el título y súbelo a `main`. Guarda evidencia del workflow exitoso y del cambio visible: demuestra la automatización.
+1. Conecta tu cuenta de Streamlit Community Cloud con GitHub, revisando los permisos solicitados.
+2. Pulsa Create app y selecciona el repositorio `mariela3009/Visualization-Reports-or-Dashboard`, rama `main`, archivo `app.py`.
+3. Selecciona Python 3.11 o posterior en Advanced settings y publica la aplicación.
+4. Comprueba la URL pública y guarda el enlace en `entrega/enlaces.txt`.
+5. Cada cambio en `main` activa las pruebas de Actions y la actualización automática del proveedor. Son procesos independientes: el despliegue no espera a las pruebas. Para bloquear cambios que no pasen pruebas se requiere protección de rama.
+6. Demuestra la automatización con un cambio visible en el título y captura el resultado remoto.
 
-Los pull requests ejecutan pruebas; la publicación se realiza desde `main`. El token permanece en GitHub Secrets. El script envía solo los archivos de la aplicación. Una subida exitosa no prueba que la construcción remota haya terminado: revisa su estado y funcionamiento.
+La alternativa Hugging Face Docker requiere PRO según el error obtenido durante el despliegue. Su script se conserva, pero la publicación de Actions queda desactivada salvo que se configure `ENABLE_HF_DEPLOY=true`. El despliegue principal usa Streamlit Community Cloud y no necesita el secreto HF_TOKEN.
 
 ## Archivos de entrega
 
@@ -57,10 +56,10 @@ python scripts/empaquetar.py
 ## Referencias
 
 - https://docs.streamlit.io/
-- https://huggingface.co/docs/hub/spaces-sdks-docker
-- https://huggingface.co/docs/huggingface_hub/guides/upload
+- https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy
+- https://docs.streamlit.io/deploy/streamlit-community-cloud/manage-your-app
 - https://docs.github.com/en/actions
 
 ## Estado
 
-Código y materiales preparados. La creación de cuentas, publicación del repositorio, ejecución remota, artículo, grabación/publicación del video y envío a Telegram requieren completarse con las cuentas del equipo. Los enlaces pendientes no son evidencia de entrega.
+Código y materiales preparados. El repositorio está publicado. La aplicación pública, el artículo, el video y el envío a Telegram siguen pendientes. Los enlaces pendientes no son evidencia de entrega.

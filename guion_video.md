@@ -6,7 +6,7 @@
 
 **Pantalla:** dashboard público y título del proyecto.
 
-**Narración:** «Hola, soy [nombre]. En este video muestro cómo construir un dashboard de ventas con Streamlit, publicar su código en GitHub y automatizar el despliegue en Hugging Face Spaces. El proyecto se llama Ventas 360 y permite explorar ventas por fecha, ciudad y categoría».
+**Narración:** «Hola, soy [nombre]. En este video muestro cómo construir un dashboard de ventas con Streamlit, publicar su código en GitHub y automatizar el despliegue en Streamlit Community Cloud. El proyecto se llama Ventas 360 y permite explorar ventas por fecha, ciudad y categoría».
 
 ## 0:25–0:55 — Datos y estructura
 
@@ -28,15 +28,15 @@
 
 ## 2:15–3:00 — Repositorio y automatización
 
-**Pantalla:** URL pública de GitHub; workflow; nombres de secret y variable sin mostrar su contenido; ejecución exitosa.
+**Pantalla:** URL pública de GitHub; workflow de pruebas; configuración de repositorio, rama y archivo en Community Cloud.
 
-**Narración:** «El repositorio es público e incluye instrucciones para ejecutar el proyecto. GitHub Actions verifica la aplicación en cada cambio. Las pruebas revisan los datos, el arranque y el comportamiento de los filtros. Cuando actualizamos la rama main y las pruebas pasan, el flujo ejecuta el script de despliegue. El token se guarda como secreto y el identificador del Space como variable; las credenciales no están en el código».
+**Narración:** «El repositorio es público e incluye instrucciones para ejecutar el proyecto. GitHub Actions verifica la aplicación en cada cambio. Las pruebas revisan los datos, el arranque y el comportamiento de los filtros. Streamlit Community Cloud observa main y actualiza el dashboard automáticamente. Las pruebas y el despliegue son independientes; una protección de rama puede exigir que las pruebas pasen antes de integrar cambios».
 
 ## 3:00–3:45 — Publicación y evidencia
 
-**Pantalla:** Dockerfile, Space en estado Running, URL pública y evidencia de un cambio de título publicado automáticamente.
+**Pantalla:** Configuración de Community Cloud, dashboard activo, URL pública y evidencia de un cambio de título publicado automáticamente.
 
-**Narración, después de verificarlo:** «El Dockerfile define el entorno y ejecuta Streamlit en el puerto 7860. Hugging Face construye el contenedor y publica la aplicación. Aquí se ve el Space en ejecución y el dashboard accesible desde su dirección pública. Para demostrar la automatización, cambié el título y actualicé main. Esta ejecución corresponde al cambio y aquí podemos ver el resultado publicado».
+**Narración, después de verificarlo:** «Configuramos el repositorio, la rama main y el archivo app.py. Community Cloud instala las dependencias y ejecuta Streamlit. Aquí se ve la aplicación activa y el dashboard accesible desde su dirección pública. Para demostrar la automatización, cambié el título y actualicé main. Esta ejecución corresponde al cambio y aquí podemos ver el resultado publicado».
 
 **Nota:** preparar esta evidencia antes de grabar; usar un corte de edición para omitir la espera de construcción.
 
@@ -58,7 +58,7 @@ Título: **Dashboard de ventas con Streamlit y despliegue automático | Ventas 3
 
 Descripción editable:
 
-«Construcción de un dashboard educativo con Streamlit, Pandas y Plotly, repositorio público en GitHub y despliegue automático en Hugging Face Spaces mediante GitHub Actions.
+«Construcción de un dashboard educativo con Streamlit, Pandas y Plotly, repositorio público en GitHub y despliegue automático en Streamlit Community Cloud con verificaciones en GitHub Actions.
 
 Repositorio: [URL real]
 Dashboard: [URL real]

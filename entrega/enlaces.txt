@@ -1,7 +1,7 @@
 ESTADO: PENDIENTE DE PUBLICACION. Este archivo todavía no constituye una entrega completa.
 Equipo e integrantes: PENDIENTE
 Repositorio publico de GitHub: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
-Dashboard publico de Hugging Face Spaces: PENDIENTE
+Dashboard publico de Streamlit Community Cloud: PENDIENTE
 Evidencia de automatizacion (ejecucion GitHub Actions): PENDIENTE
 Articulo de cada integrante (Medium, Dev.to o Hashnode): PENDIENTE
 Video publico, maximo 5 minutos: PENDIENTE

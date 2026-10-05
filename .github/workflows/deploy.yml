@@ -1,4 +1,4 @@
-name: Verificar y publicar dashboard
+name: Verificar dashboard (Hugging Face opcional)
 on:
   push:
     branches: [main]
@@ -22,7 +22,7 @@ jobs:
       - run: python -m unittest discover -s tests -v
   publicar:
     needs: verificar
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: vars.ENABLE_HF_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

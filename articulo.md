@@ -58,7 +58,7 @@ La publicación se configura en Streamlit Community Cloud con el repositorio `ma
 
 GitHub Actions y el despliegue del proveedor son procesos independientes: Community Cloud observa los cambios de la rama y actualiza la aplicación automáticamente; no espera a que Actions termine. Para exigir pruebas antes de integrar cambios, el equipo puede configurar protección de rama y trabajar mediante pull requests. La validación de esta entrega requiere comprobar las pruebas y el funcionamiento de la URL pública.
 
-**[Insertar captura de las pruebas exitosas y de la aplicación ejecutándose en Streamlit Community Cloud.]**
+[Ejecución de pruebas exitosa](https://github.com/mariela3009/Visualization-Reports-or-Dashboard/actions/runs/37252674071). La leyenda «Publicado en Streamlit Community Cloud · Actualización automática desde GitHub» apareció en la aplicación remota tras enviar el cambio a main, comprobando el despliegue automático.
 
 Una demostración de la automatización consiste en modificar el título, subir el cambio a `main` y observar su aparición en la aplicación pública después del despliegue. Esa evidencia permite comprobar que las actualizaciones no requieren copiar archivos manualmente al proveedor.
 

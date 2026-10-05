@@ -2,7 +2,7 @@ ESTADO: PENDIENTE DE PUBLICACION. Este archivo todavía no constituye una entreg
 Equipo e integrantes: PENDIENTE
 Repositorio publico de GitHub: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
 Dashboard publico de Streamlit Community Cloud: https://ventas360-mariela3009.streamlit.app/
-Evidencia de automatizacion (ejecucion GitHub Actions): PENDIENTE
+Evidencia de pruebas (GitHub Actions): https://github.com/mariela3009/Visualization-Reports-or-Dashboard/actions/runs/37252674071
 Articulo de cada integrante (Medium, Dev.to o Hashnode): PENDIENTE
 Video publico, maximo 5 minutos: PENDIENTE
 Fecha de envio al grupo de Telegram: PENDIENTE

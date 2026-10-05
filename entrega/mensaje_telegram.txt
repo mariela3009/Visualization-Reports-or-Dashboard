@@ -1,9 +1,9 @@
 Hola, compartimos nuestro proyecto Ventas 360, un dashboard con Streamlit, Pandas y Plotly, con despliegue automático en Streamlit Community Cloud y pruebas en GitHub Actions.
 
 Integrantes: [nombres]
-Articulo(s): [URL publica de cada integrante]
+Articulo: https://dev.to/mariela_estefanyramoslo/de-los-datos-a-la-nube-un-dashboard-de-ventas-con-streamlit-y-despliegue-automatico-2knk
 Video (maximo 5 minutos): [URL publica]
-Dashboard: [URL publica]
-Repositorio: [URL publica]
+Dashboard: https://ventas360-mariela3009.streamlit.app/
+Repositorio: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
 
 Los datos utilizados son simulados con fines educativos.

@@ -3,7 +3,7 @@ Equipo e integrantes: PENDIENTE
 Repositorio publico de GitHub: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
 Dashboard publico de Streamlit Community Cloud: https://ventas360-mariela3009.streamlit.app/
 Evidencia de pruebas (GitHub Actions): https://github.com/mariela3009/Visualization-Reports-or-Dashboard/actions/runs/37252674071
-Articulo de cada integrante (Medium, Dev.to o Hashnode): PENDIENTE
+Articulo publicado en Dev.to: https://dev.to/mariela_estefanyramoslo/de-los-datos-a-la-nube-un-dashboard-de-ventas-con-streamlit-y-despliegue-automatico-2knk
 Video publico, maximo 5 minutos: PENDIENTE
 Fecha de envio al grupo de Telegram: PENDIENTE
 

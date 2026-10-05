@@ -15,6 +15,7 @@ def cop(valor):
 
 df = cargar_datos()
 st.title("📊 Ventas 360")
+st.caption("Publicado en Streamlit Community Cloud · Actualización automática desde GitHub")
 st.caption("Dashboard educativo · 1.200 pedidos simulados de 2025 · Valores en pesos colombianos (COP)")
 with st.sidebar:
     st.header("Filtros")

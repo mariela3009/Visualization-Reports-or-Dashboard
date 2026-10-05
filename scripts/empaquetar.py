@@ -6,7 +6,7 @@ raiz = Path(__file__).resolve().parents[1]
 archivos = ["app.py", "data.py", "requirements.txt", "Dockerfile", ".gitignore", "README.md",
             "articulo.md", "guion_video.md", ".github/workflows/deploy.yml", "scripts/deploy.py",
             "scripts/empaquetar.py", "tests/test_dashboard.py", "entrega/enlaces.txt",
-            "entrega/mensaje_telegram.txt", "entrega/checklist.md"]
+            "entrega/mensaje_telegram.txt", "entrega/checklist.md", "evidencias/dashboard.jpg"]
 with ZipFile(raiz / "proyecto_ventas360.zip", "w", ZIP_DEFLATED) as paquete:
     for nombre in archivos:
         paquete.write(raiz / nombre, arcname=nombre)

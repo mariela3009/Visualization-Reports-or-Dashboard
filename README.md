@@ -2,6 +2,8 @@
 
 Repositorio: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
 
+Dashboard público: https://ventas360-mariela3009.streamlit.app/
+
 Dashboard educativo de ventas con Streamlit, Pandas y Plotly. Incluye indicadores, filtros, tres gráficos, tabla y exportación CSV. Utiliza 1.200 pedidos ficticios de 2025, reproducibles con semilla 42; no contiene datos de clientes reales.
 
 ## Ejecutar
@@ -62,4 +64,4 @@ python scripts/empaquetar.py
 
 ## Estado
 
-Código y materiales preparados. El repositorio está publicado. La aplicación pública, el artículo, el video y el envío a Telegram siguen pendientes. Los enlaces pendientes no son evidencia de entrega.
+Código y materiales preparados. El repositorio está publicado. La aplicación está publicada en Streamlit Community Cloud. El artículo en Dev.to, el video y el envío a Telegram siguen pendientes. Los enlaces pendientes no son evidencia de entrega.

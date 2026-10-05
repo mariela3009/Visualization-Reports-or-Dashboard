@@ -2,7 +2,7 @@
 
 **Autor:** [nombre del integrante]  
 **Repositorio público:** https://github.com/mariela3009/Visualization-Reports-or-Dashboard  
-**Dashboard público:** [pegar URL real]  
+**Dashboard público:** https://ventas360-mariela3009.streamlit.app/  
 **Video:** [pegar URL real]
 
 > Borrador listo para editar. Publicar después de ejecutar el despliegue, verificar el dashboard y reemplazar los campos pendientes. Cada integrante debe identificar su contribución real y publicar su artículo si así lo exige la asignatura.
@@ -42,7 +42,7 @@ La aplicación comprueba primero que haya resultados. Cuando una selección no c
 
 El gráfico de líneas agrupa las ventas por mes para mostrar la evolución. Las barras comparan los ingresos por producto y el gráfico de dona presenta la participación por categoría. Una tabla permite inspeccionar los pedidos; el botón de descarga exporta exactamente la selección visible.
 
-**[Insertar captura del dashboard completo y otra con filtros activos.]**
+![Dashboard publicado](https://raw.githubusercontent.com/mariela3009/Visualization-Reports-or-Dashboard/main/evidencias/dashboard.jpg)
 
 ## Repositorio público
 
@@ -68,10 +68,10 @@ Sin aplicar filtros, los datos generados contienen 1.200 pedidos, 3.656 unidades
 
 ## Publicación y resultado
 
-**Aplicación:** [pegar URL pública real].  
+**Aplicación:** https://ventas360-mariela3009.streamlit.app/  
 **Video del proceso:** [pegar URL pública real].
 
-**[Después de probar: describir qué verificaste en la URL pública, la fecha de verificación y el cambio usado para demostrar el despliegue automático.]**
+El 4 de octubre de 2026 se verificó la aplicación remota: mostró 1.200 pedidos, 3.656 unidades y $1.980.275.000 COP de ventas. Para comprobar las actualizaciones automáticas se agregó una leyenda sobre el proveedor y se envió el cambio a main.
 
 El proyecto ofrece una ruta reproducible desde una tabla hasta una aplicación de visualización. Como mejoras futuras se pueden incorporar archivos propios, comparaciones entre periodos y validaciones de calidad de datos. Cualquier uso con datos reales exigiría adaptar el modelo y revisar quién puede acceder a la información.
 

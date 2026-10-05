@@ -1,0 +1,10 @@
+ESTADO: PENDIENTE DE PUBLICACION. Este archivo todavía no constituye una entrega completa.
+Equipo e integrantes: PENDIENTE
+Repositorio publico de GitHub: https://github.com/mariela3009/Visualization-Reports-or-Dashboard
+Dashboard publico de Hugging Face Spaces: PENDIENTE
+Evidencia de automatizacion (ejecucion GitHub Actions): PENDIENTE
+Articulo de cada integrante (Medium, Dev.to o Hashnode): PENDIENTE
+Video publico, maximo 5 minutos: PENDIENTE
+Fecha de envio al grupo de Telegram: PENDIENTE
+
+Reemplazar todos los PENDIENTE por datos y enlaces reales antes de entregar.

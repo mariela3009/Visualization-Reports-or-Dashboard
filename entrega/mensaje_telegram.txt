@@ -1,0 +1,9 @@
+Hola, compartimos nuestro proyecto Ventas 360, un dashboard con Streamlit, Pandas y Plotly, con despliegue automatizado mediante GitHub Actions en Hugging Face Spaces.
+
+Integrantes: [nombres]
+Articulo(s): [URL publica de cada integrante]
+Video (maximo 5 minutos): [URL publica]
+Dashboard: [URL publica]
+Repositorio: [URL publica]
+
+Los datos utilizados son simulados con fines educativos.
